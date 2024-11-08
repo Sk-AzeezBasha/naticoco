@@ -1,0 +1,388 @@
+/* General reset and font settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header with reduced height and aligned navigation */
+header {
+    background: #fdfffd;
+    color: rgb(245, 242, 242);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo img {
+    height: 55px;
+    width: auto;
+}
+
+/* Navigation menu adjustments */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgba(69, 36, 3, 0.696);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2b893a;
+    border-radius: 4px;
+    color: #fdfffd;
+}
+
+/* Hero Section */
+#hero {
+    background: url('path/to/hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #E8DFDF;
+    background-color: #868b87;
+}
+
+#hero h1 {
+    font-size: 48px;
+}
+
+#hero button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    cursor: pointer;
+}
+
+/* Categories */
+#categories {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#categories h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 32px; /* Increase font size */
+    font-weight: 800; /* Very bold text */
+}
+
+#categories p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* Increase font size */
+    font-weight: 700; /* Very bold text */
+    margin: 10px 0;
+    position: relative;
+}
+
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 220px;
+    padding-right: 150px;
+}
+
+.category-item {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.category-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.category-text {
+    font-weight: bold;
+    color: black;
+    display: block;
+    font-size:x-large;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 8px; /* Adjust as needed to space text below image */
+}
+
+/* Adjusts "Shop by Categories" text styling */
+#categories p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px; /* Increase font size for "Shop by Categories" */
+    font-weight: 700; /* Very bold text */
+    margin: 10px 0;
+    position: relative;
+}
+
+#categories p::before,
+#categories p::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 15px; /* Adjusts spacing between line and text */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Bestsellers Section */
+.bestsellers-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Popular Searches */
+#popular-searches {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.search-category {
+    margin-bottom: 15px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    /* Stack navbar items vertically */
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Reduce hero section height and font sizes */
+    #hero {
+        height: 300px;
+        padding: 10px;
+    }
+
+    #hero h1 {
+        font-size: 32px;
+    }
+
+    #hero button {
+        font-size: 16px;
+    }
+
+    /* Adjust category grid for mobile */
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust card width in Bestsellers for mobile */
+    .bestsellers-scroll .card {
+        width: 150px;
+        margin: 0 5px;
+    }
+
+    /* Footer padding adjustments */
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* Adjust hero section font sizes for tablets */
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    /* Reduce category grid to 2 columns on tablets */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Contact Form and Page Adjustments */
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Styling for Shop by Categories text */
+#categories h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#categories p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    position: relative;
+}
+
+#categories p::before,
+#categories p::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 15px; /* Adjusts spacing between line and text */
+}
+/* Styles for the tab menu and grid */
+.tab {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.tab-link {
+    background-color: #fa8911;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.tab-link.active, .tab-link:hover {
+    background-color: #555;
+    color: #f6f0f0;
+}
+
+.tab-content {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.category-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.category-items-grid a {
+    text-decoration: none;
+    color: #333;
+}
+
+.category-items-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.category-items-grid p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.category-items-grid a:hover img {
+    transform: scale(1.05);
+}
+
