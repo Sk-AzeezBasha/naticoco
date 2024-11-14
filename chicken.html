@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Categories - Naticoco</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles similar to bestseller cards */
+        .category-items-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 180px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 4px;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1em;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .card p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Back to Homepage -->
+    <header>
+        <div class="logo">
+            <a href="signIn.html">
+                <img src="logo.jpg" alt="Naticoco Logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Tab Navigation for Chicken Categories -->
+    <section id="chicken-categories">
+        <h1>Choose Your Chicken Type</h1>
+        <div class="tab">
+            <button class="tab-link" onclick="openCategory(event, 'NatiChicken')">Nati Chicken</button>
+            <button class="tab-link" onclick="openCategory(event, 'FarmChicken')">Farm Chicken</button>
+            <button class="tab-link" onclick="openCategory(event, 'KadaknadhChicken')">Kadaknadh Chicken</button>
+        </div>
+
+        <!-- Nati Chicken Menu -->
+        <div id="NatiChicken" class="tab-content">
+            <h2>Nati Chicken</h2>
+            <div class="category-items-grid">
+                <div class="card">
+                    <img src="Chicken Breast Boneless With skin.jpg" alt="Chicken Breast Boneless (With Skin)">
+                    <h3>Chicken Breast Boneless (With Skin)</h3>
+                    <p>500g | Serves 2</p>
+                    <p class="price">₹189 <span class="original-price">₹199</span> 5% off</p>
+                    <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+                </div>
+                <a href="#"><img src="Chicken curry cut With skin.png" alt="Chicken Curry Cut (With Skin)"><p>Chicken Curry Cut (With Skin)</p></a>
+                <a href="#"><img src="Chicken Biryani Cut With Skin.png" alt="Chicken Biryani Cut (With Skin)"><p>Chicken Biryani Cut (With Skin)</p></a>
+                <a href="#"><img src="Chicken Drumsticks With skin.jpg" alt="Chicken Drumsticks (With Skin)"><p>Chicken Drumsticks (With Skin)</p></a>
+                <a href="#"><img src="chicken whole leg with skin.jpg" alt="Chicken Whole Leg (With Skin)"><p>Chicken Whole Leg (With Skin)</p></a>
+                
+                <a href="#"><img src="chicken breast boneless without skin.jpg" alt="Chicken Breast Boneless (Without Skin)"><p>Chicken Breast Boneless (Without Skin)</p></a>
+                <a href="#"><img src="chicken curry cut without skin.png" alt="Chicken Curry Cut (Without Skin)"><p>Chicken Curry Cut (Without Skin)</p></a>
+                <a href="#"><img src="Chicken biryani cut without skin.png" alt="Chicken Biryani Cut (Without Skin)"><p>Chicken Biryani Cut (Without Skin)</p></a>
+                <a href="#"><img src="Chicken drumsticks without skin.png" alt="Chicken Drumsticks (Without Skin)"><p>Chicken Drumsticks (Without Skin)</p></a>
+                <a href="#"><img src="Chicken whole leg without skin.png" alt="Chicken Whole Leg (Without Skin)"><p>Chicken Whole Leg (Without Skin)</p></a>        
+            </div>
+        </div>
+
+        <!-- Farm Chicken Menu -->
+        <!-- Farm Chicken Menu -->
+        <div id="FarmChicken" class="tab-content" style="display: none;">
+        <h2>Farm Chicken</h2>
+        <div class="category-items-grid">
+        <a href="#"><img src="Chicken Breast Boneless With skin.jpg" alt="Chicken Breast Boneless (With Skin)"><p>Chicken Breast Boneless (With Skin)</p></a>
+        <a href="#"><img src="Chicken curry cut With skin.png" alt="Chicken Curry Cut (With Skin)"><p>Chicken Curry Cut (With Skin)</p></a>
+        <a href="#"><img src="Chicken Biryani Cut With Skin.png" alt="Chicken Biryani Cut (With Skin)"><p>Chicken Biryani Cut (With Skin)</p></a>
+        <a href="#"><img src="Chicken Drumsticks With skin.jpg" alt="Chicken Drumsticks (With Skin)"><p>Chicken Drumsticks (With Skin)</p></a>
+        <a href="#"><img src="chicken whole leg with skin.jpg" alt="Chicken Whole Leg (With Skin)"><p>Chicken Whole Leg (With Skin)</p></a>
+        
+        <a href="#"><img src="chicken breast boneless without skin.jpg" alt="Chicken Breast Boneless (Without Skin)"><p>Chicken Breast Boneless (Without Skin)</p></a>
+        <a href="#"><img src="chicken curry cut without skin.png" alt="Chicken Curry Cut (Without Skin)"><p>Chicken Curry Cut (Without Skin)</p></a>
+        <a href="#"><img src="Chicken biryani cut without skin.png" alt="Chicken Biryani Cut (Without Skin)"><p>Chicken Biryani Cut (Without Skin)</p></a>
+        <a href="#"><img src="Chicken drumsticks without skin.png" alt="Chicken Drumsticks (Without Skin)"><p>Chicken Drumsticks (Without Skin)</p></a>
+        <a href="#"><img src="Chicken whole leg without skin.png" alt="Chicken Whole Leg (Without Skin)"><p>Chicken Whole Leg (Without Skin)</p></a>
+
+        <!-- Premium Chicken Options -->
+        <a href="#"><img src="Chicken Breast Boneless With skin.jpg" alt="Premium Chicken Breast Boneless (With Skin)"><p>Premium Chicken Breast Boneless (With Skin)</p></a>
+        <div class="card">
+            <img src="Chicken curry cut With skin.png" alt="Chicken Curry Cut (With Skin)">
+            <h3>Chicken Curry Cut (With Skin)</h3>
+            <p>1000g | 24-36 Pieces | Serves 6</p>
+            <p class="price">₹339 <span class="original-price">₹349</span> 3% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>
+        <a href="#"><img src="Chicken Biryani Cut With Skin.png" alt="Premium Chicken Biryani Cut (With Skin)"><p>Premium Chicken Biryani Cut (With Skin)</p></a>
+        <a href="#"><img src="Chicken Drumsticks With skin.jpg" alt="Premium Chicken Drumsticks (With Skin)"><p>Premium Chicken Drumsticks (With Skin)</p></a>
+        <a href="#"><img src="chicken whole leg with skin.jpg" alt="Premium Chicken Whole Leg (With Skin)"><p>Premium Chicken Whole Leg (With Skin)</p></a>
+        
+        <a href="#"><img src="chicken breast boneless without skin.jpg" alt="Premium Chicken Breast Boneless (Without Skin)"><p>Premium Chicken Breast Boneless (Without Skin)</p></a>
+        <a href="#"><img src="chicken curry cut without skin.png" alt="Premium Chicken Curry Cut (Without Skin)"><p>Premium Chicken Curry Cut (Without Skin)</p></a>
+        <a href="#"><img src="chicken biryani cut (without skin).png" alt="Premium Chicken Biryani Cut (Without Skin)"><p>Premium Chicken Biryani Cut (Without Skin)</p></a>
+        <a href="#"><img src="Chicken drumsticks without skin.png" alt="Premium Chicken Drumsticks (Without Skin)"><p>Premium Chicken Drumsticks (Without Skin)</p></a>
+        <a href="#"><img src="Chicken whole leg without skin.png" alt="Premium Chicken Whole Leg (Without Skin)"><p>Premium Chicken Whole Leg (Without Skin)</p></a>
+
+        <!-- Additional Chicken Options -->
+        <a href="#"><img src="Chicken Lollypop (Marinated).jpg" alt="Chicken Lollipop"><p>Chicken Lollipop</p></a>
+        <a href="#"><img src="Chicken Mince kheema.jpg"><p>Chicken Mince (Kheema)</p></a>
+        <a href="#"><img src="Chicken liver.jpg" alt="Chicken Liver"><p>Chicken Liver</p></a>
+        <a href="#"><img src="chicken gizzard.jpg" alt="Chicken Gizzard"><p>Chicken Gizzard</p></a>
+        <a href="#"><img src="chicken liver & gizzard mix.jpg" alt="Chicken Liver & Gizzard Mix"><p>Chicken Liver & Gizzard Mix</p></a>
+        <a href="#"><img src="chicken wings.jpg" alt="Chicken Wings"><p>Chicken Wings</p></a>
+        <a href="#"><img src="Chicken banana cut.jpg" alt="Chicken Batana Cut"><p>Chicken Batana Cut</p></a>
+    </div>
+</div>
+
+
+        <!-- Kadaknadh Chicken Menu -->
+        <div id="KadaknadhChicken" class="tab-content" style="display: none;">
+    <h2>Kadaknadh Chicken</h2>
+    <div class="category-items-grid">
+        
+        <div class="card">
+            <img src="chicken Breast boneless(with skin).jpg" alt="Chicken Breast Boneless (With Skin)">
+            <h3>Chicken Breast Boneless (With Skin)</h3>
+            <p>500g | Serves 2</p>
+            <p class="price">₹250 <span class="original-price">₹260</span> 4% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>
+        
+        <div class="card">
+            <img src="chicken curry cut(with skin).jpg" alt="Chicken Curry Cut (With Skin)">
+            <h3>Chicken Curry Cut (With Skin)</h3>
+            <p>500g | Serves 2</p>
+            <p class="price">₹260 <span class="original-price">₹270</span> 4% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>
+        
+        <div class="card">
+            <img src="Chicken Biryani Cut With Skin.png" alt="Chicken Biryani Cut (With Skin)">
+            <h3>Chicken Biryani Cut (With Skin)</h3>
+            <p>500g | Serves 2</p>
+            <p class="price">₹270 <span class="original-price">₹280</span> 4% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>
+        
+        <div class="card">
+            <img src="Chicken Drumsticks With skin.jpg" alt="Chicken Drumsticks (With Skin)">
+            <h3>Chicken Drumsticks (With Skin)</h3>
+            <p>500g | Serves 2</p>
+            <p class="price">₹240 <span class="original-price">₹250</span> 4% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>
+
+        <div class="card">
+            <img src="chicken whole leg with skin.jpg" alt="Chicken Whole Leg (With Skin)">
+            <h3>Chicken Whole Leg (With Skin)</h3>
+            <p>500g | Serves 2</p>
+            <p class="price">₹250 <span class="original-price">₹260</span> 4% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>  
+
+        <div class="card">
+            <img src="chicken breast boneless without skin.jpg" alt="Chicken Breast Boneless (Without Skin)">
+            <h3>Chicken Breast Boneless (Without Skin)</h3>
+            <p>500g | Serves 2</p>
+            <p class="price">₹240 <span class="original-price">₹250</span> 4% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>
+        
+        <div class="card">
+            <img src="chicken curry cut without skin.png" alt="Chicken Curry Cut (Without Skin)">
+            <h3>Chicken Curry Cut (Without Skin)</h3>
+            <p>500g | Serves 2</p>
+            <p class="price">₹230 <span class="original-price">₹240</span> 4% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>
+        
+        <div class="card">
+            <img src="Chicken biryani cut without skin.png" alt="Chicken Biryani Cut (Without Skin)">
+            <h3>Chicken Biryani Cut (Without Skin)</h3>
+            <p>500g | Serves 2</p>
+            <p class="price">₹220 <span class="original-price">₹230</span> 4% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>
+        
+        <div class="card">
+            <img src="Chicken drumsticks without skin.png" alt="Chicken Drumsticks (Without Skin)">
+            <h3>Chicken Drumsticks (Without Skin)</h3>
+            <p>500g | Serves 2</p>
+            <p class="price">₹210 <span class="original-price">₹220</span> 4% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>
+
+        <div class="card">
+            <img src="Chicken whole leg without skin.png" alt="Chicken Whole Leg (Without Skin)">
+            <h3>Chicken Whole Leg (Without Skin)</h3>
+            <p>500g | Serves 2</p>
+            <p class="price">₹250 <span class="original-price">₹260</span> 4% off</p>
+            <p><img src="delivery-icon.png" alt="Delivery Icon"> Delivered in 90 mins</p>
+        </div>
+        
+    </div>
+</div>
+
+    </section>
+    <script>
+        function openCategory(evt, categoryName) {
+            const tabContents = document.querySelectorAll(".tab-content");
+            tabContents.forEach(content => content.style.display = "none");
+            document.getElementById(categoryName).style.display = "block";
+
+            const tabLinks = document.querySelectorAll(".tab-link");
+            tabLinks.forEach(link => link.classList.remove("active"));
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
