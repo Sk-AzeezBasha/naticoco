@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naticoco - Fresh and Quality Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Footer Styles */
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+            min-width: 150px;
+        }
+
+        .footer-section h3 {
+            color: #ffca28;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #ffca28;
+        }
+
+        .footer-logo img {
+            max-width: 120px;
+            margin-bottom: 10px;
+        }
+
+        .footer .app-links {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .app-links img {
+            width: 80px;
+        }
+
+        .image {
+            border-radius: 2%;
+            height: 80px;
+            width: 80px;
+        }
+
+        /* Responsive Footer */
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-section {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .app-links {
+                justify-content: center;
+                margin: 10px 0;
+            }
+
+            .footer-logo img {
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Naticoco Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="signIn.html">SignIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section with Auto-Scrollable Cover Photos -->
+    <section id="hero-carousel" class="hero-carousel">
+        <div class="carousel-slide active">
+            <img src="naticoco site banner1.png" alt="Fresh Products">
+        </div>
+        <div class="carousel-slide">
+            <img src="naticoco banner2.png" alt="Quality Meats">
+        </div>
+        <div class="carousel-slide">
+            <img src="naticoco banner3.png" alt="Fast Delivery">
+        </div>
+    </section>
+
+
+    <!-- Shop by Categories Section -->
+    <section id="categories">
+        <h2>JUICY CHICKEN DELIGHT</h2>
+        <p>Shop by Categories</p>
+        <div class="category-grid">
+            <div class="category-item">
+                <a href="chicken.html">
+                    <img src="chicken logo.jpeg" alt="Chicken">
+                </a>
+                <span class="category-text">CHICKEN</span>
+            </div>
+            <div class="category-item">
+                <a href="marinated.html">
+                    <img src="marinated.jpeg" alt="Marinated">
+                </a>
+                <span class="category-text">MARINATED</span>
+            </div>
+            <div class="category-item">
+                <a href="heat-eat.html">
+                    <img src="heat and eat.jpeg" alt="Heat & Eat">
+                </a>
+                <span class="category-text">HEAT & EAT</span>
+            </div>
+            <div class="category-item">
+                <a href="eggs.html">
+                    <img src="eggs.jpeg" alt="Eggs">
+                </a>
+                <span class="category-text">EGGS</span>
+            </div>
+            <div class="category-item">
+                <a href="spices.html">
+                    <img src="spices.jpeg" alt="Spices">
+                </a>
+                <span class="category-text">SPICES</span>
+            </div>
+            <div class="category-item">
+                <a href="pet-food.html">
+                    <img src="petfood_logo.jpeg" alt="Pet Food">
+                </a>
+                <span class="category-text">PET FOOD</span>
+            </div>
+            <div class="category-item">
+                <a href="mutton.html">
+                    <img src="mutton_logo.jpeg" alt="Mutton">
+                </a>
+                <span class="category-text">MUTTON</span>
+            </div>
+            <div class="category-item">
+                <a href="post-orders.html">
+                    <img src="post_orders.jpeg" alt="Post Orders">
+                </a>
+                <span class="category-text">POST ORDERS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestsellers Section -->
+    <section id="bestsellers" class="section">
+        <h2 class="juicy-heading">Bestsellers</h2>
+        <p>Fresh meats at extra special prices</p>
+        <div class="bestsellers-scroll">
+            <div class="card">
+                <img src="chicken curry cut without skin.png" alt="Chicken Curry Cut - Small Pieces">
+                <h3>Chicken Curry Cut - Small Pieces</h3>
+                <p>500 g | 12-18 Pieces | Serves 4</p>
+                <p><strong>169 ₹ <span class="original-price">185</span> 9% off</strong></p>
+                <p><img src="path/to/delivery-icon.png" alt="Delivery Icon"> Today in 90 mins</p>
+            </div>
+            <div class="card">
+                <img src="Chicken curry cut With skin.png" alt="Chicken Curry Cut - Large Pack">
+                <h3>Chicken Curry Cut - Large Pack</h3>
+                <p>1000 g | 24-36 Pieces | Serves 6</p>
+                <p><strong>339 ₹ <span class="original-price">349</span> 3% off</strong></p>
+                <p><img src="path/to/delivery-icon.png" alt="Delivery Icon"> Today in 90 mins</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Logo Section -->
+        <div class="footer-section footer-logo">
+            <img class="image" src="logo2.jpg" alt="NATICOCO Logo">
+        </div>
+
+        <!-- Legal Information -->
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Caution Notice</a></li>
+            </ul>
+        </div>
+
+        <!-- NATICOCO Food -->
+        <div class="footer-section">
+            <h3>NATICOCO Food</h3>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Order Lookup</a></li>
+                <li><a href="#">Gift Card</a></li>
+                <li><a href="#">Nutrition & Allergen</a></li>
+            </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Get Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Find a Store -->
+        <div class="footer-section">
+            <h3>Find a NATICOCO</h3>
+            <ul>
+                <li><a href="#"><img src="map.jpg" alt="map" height="15px"> Find a NATICOCO</a></li>
+            </ul>
+        </div>
+
+        <!-- App Links -->
+        <div class="footer-section">
+            <div class="app-links">
+                <a href="#"><img src="playstore.jpg" alt="Google Play"></a>
+                <a href="#"><img src="appstore.jpg" alt="Apple Store"></a>
+            </div>
+        </div>
+
+        <div style="width: 100%; text-align: center; margin-top: 20px;">
+            <p>&copy; 2024 Naticoco. All Rights Reserved.</p>
+            <p>Naticoco is your one-stop shop for fresh and quality meat and seafood delivery.</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    </script>
+
+</body>
+
+</html>
